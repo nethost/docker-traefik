@@ -1,5 +1,6 @@
-FROM nethost/alpine:3.6
-MAINTAINER billgo <cocobill@vip.qq.com>
+FROM alpine:3.8
+LABEL maintainer="Billgo <cocobill@vip.qq.com>"
+
 RUN apk --no-cache add ca-certificates
 RUN set -ex; \
 	apkArch="$(apk --print-arch)"; \
